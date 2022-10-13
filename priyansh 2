@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+float conversion(float);
+
+float conversion(float tempf1){
+float tempc;
+tempc=(tempf1-32.0)*(0.5555);
+return tempc;
+}
+
+int main(){
+    float tempf;
+cout<<"temperature in Fahrenheit ";
+cin>>tempf;
+cout<<"temerature in celcius will be "<<conversion(tempf);
+
+return 0;
+}
